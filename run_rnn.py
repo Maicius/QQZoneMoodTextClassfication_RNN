@@ -14,13 +14,13 @@ from sklearn import metrics
 from rnn_model import TRNNConfig, TextRNN
 from data.cnews_loader import read_vocab, read_category, batch_iter, process_file, build_vocab
 
-base_dir = 'data/cnews'
-train_dir = os.path.join(base_dir, 'cnews.train.txt')
-test_dir = os.path.join(base_dir, 'cnews.test.txt')
-val_dir = os.path.join(base_dir, 'cnews.val.txt')
-vocab_dir = os.path.join(base_dir, 'cnews.vocab.txt')
+base_dir = 'data/qqzone'
+train_dir = os.path.join(base_dir, 'text_train.csv')
+test_dir = os.path.join(base_dir, 'text_test.csv')
+val_dir = os.path.join(base_dir, 'text_val.csv')
+vocab_dir = os.path.join(base_dir, 'text_vocab.txt')
 
-save_dir = 'checkpoints/textrnn'
+save_dir = 'checkpoints/text_rnn'
 save_path = os.path.join(save_dir, 'best_validation')  # 最佳验证结果保存路径
 
 
