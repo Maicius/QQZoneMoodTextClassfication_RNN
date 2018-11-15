@@ -7,12 +7,12 @@ class TRNNConfig(object):
     """RNN配置参数"""
 
     # 模型参数
-    embedding_dim = 32      # 词向量维度
-    seq_length = 50       # 序列长度
+    embedding_dim = 40      # 词向量维度
+    seq_length = 40       # 序列长度
     num_classes = 7        # 类别数
     vocab_size = 5000       # 词汇表大小
 
-    num_layers= 2           # 隐藏层层数
+    num_layers= 4           # 隐藏层层数
     hidden_dim = 128        # 隐藏层神经元
     rnn = 'lstm'             # lstm 或 gru
 
